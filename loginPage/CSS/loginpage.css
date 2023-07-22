@@ -1,0 +1,91 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-image: url(../Assests/Images/backgroundimage.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+#formdetails{
+    
+    width: 50%;
+    height: 65vh;
+    position: absolute;
+    top: 17%;
+    left: 25%;
+}
+#heading{
+    width: 100%;
+    height: 10vh;
+   letter-spacing: 4px;
+   color: darkblue;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+#form2{
+    
+    width: 100%;
+    height: 55vh;
+    display: flex;
+}
+#image{
+    
+    width: 40%;
+    height:55vh ;
+    float: left;
+}
+#loginimage{
+    width: 100%;
+    height: 40vh;
+}
+#userfields{
+    
+    width: 60%;
+    height: 55vh;
+    float: right;
+   
+}
+.fields{
+    width: 75%;
+    height: 5vh;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 4px 4px 4px 4px rgb(7, 47, 96);
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+#us,#ps{
+    padding-left: 15px;
+}
+#logbuttton{
+    width:60% ;
+    position: relative;
+    left: 20%;
+    color: white;
+    background-color: rgb(13, 57, 145);
+}
+#register{
+   text-decoration: none;
+    width: 40%;
+    height: 5vh;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-size: 20px;
+    
+}
+#result{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    color: rgb(4, 59, 4);
+    
+}

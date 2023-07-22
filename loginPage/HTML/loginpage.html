@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS/loginpage.css">
+    <link rel="stylesheet" href="./register.html">
+</head>
+<body>
+     
+    <div id="formdetails">
+         <div id="header">
+            <h1 id="heading">Login Form</h1>
+        </div>
+        <div id="form2">
+            <div id="image">
+                <img id="loginimage" src="../Assests/Images/loginimage.png">
+            </div>
+        
+            <div id="userfields">
+                <input class="fields" id="us" type="text"  placeholder="Enter Username" required><br><br><br>
+                <input class="fields" id="ps" type="password"  placeholder="Enter Password" required><br><br><br>
+                <input class="fields" id="logbuttton" type="submit" value="login" onclick="op()">
+                <a href="./register.html" id="register">SignUp</a>
+                <p id="result"></p>
+            </div> 
+        </div>
+    </div>
+    <script>
+        function op(){
+            var field1 = document.getElementById("us").value;
+            var field2 = document.getElementById("ps").value;
+            if(field1 == "puppy" && field2 == "pavs123"){
+                document.getElementById("result").innerHTML="Successful Login"
+            }
+            else{
+                alert("invalid Information")
+            }
+        }
+    </script> 
+    
+</body>
+</html>

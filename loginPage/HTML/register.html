@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+    <h1>Create an Account</h1>
+     <div id="sub">
+        <input class="fields"  type="text" placeholder="Name" id="name" required><br><br>
+        <input class="fields" type="email" placeholder="Email" id="email" required><br><br>
+        <input class="fields" type="password" placeholder="Password" id="ps" oninput=" verifyPassword()" required><br><br><br>
+        <input class="fields" type="password" placeholder="Confirm Password" id="cps" required><br>
+        <input type="button" value="Signup" id="signin" class="fields" onclick="passwordLen()">
+        
+    </div>
+    <p id="result"></p>
+    <span  id = "message"></span>
+    
+    <script>
+        function verifyPassword() {  
+            var pw = document.getElementById("ps").value;  
+            //check empty password field  
+            if(pw == "") {  
+                document.getElementById("message").innerHTML = "**Fill the password please!";  
+                  
+            }  
+            
+            //minimum password length validation  
+            else if(pw.length < 8) {  
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+                  
+            }  
+            
+            
+            else {  
+                alert("Password is correct");  
+            }  
+        }  
+
+
+        function passwordLen()
+        {
+            var pass = document.getElementById("ps").value;
+            var cpass = document.getElementById("cps").value;
+            if(pass == cpass){
+                document.getElementById("result").innerHTML = "Successful"
+            }
+            else{
+                alert("Invalid Password")
+            }
+        }
+    </script>
+</body>
+</html>

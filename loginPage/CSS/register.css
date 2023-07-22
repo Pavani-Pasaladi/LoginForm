@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(../Assests/Images/signupbackgroundimage.png);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left:37% ;
+    letter-spacing: 3px;
+    color: white;
+    
+}
+#sub{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(8, 44, 76);
+    box-shadow: 2px 2px 2px 2px rgb(46, 95, 137);
+    border-radius: 4px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.fields{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border: 2px solid rgb(1, 29, 55);
+    border-radius: 8px 8px 8px 8px;
+}
+#signin{
+    padding-left: 5px;
+    width: 100px;
+    top: 25%;
+    right: 0%;
+    background-color: gray;
+    color: white;
+    border-radius: 8px 8px 8px 8px;
+    letter-spacing: 2px;
+    
+}
+#result{
+    font-size: 24px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    color: rgb(6, 58, 6);
+}
+#message{
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 40%;
+} 
